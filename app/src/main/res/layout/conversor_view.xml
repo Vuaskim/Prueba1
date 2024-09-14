@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E0F7FA"
+    android:padding="16dp">
+
+    <!-- Campo para ingresar el valor en pesos chilenos -->
+    <EditText
+        android:id="@+id/edtValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el valor en CLP"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Layout para los botones de conversión -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btnUSD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_row="0"
+            android:layout_columnWeight="1"
+            android:text="Dólar Estadounidense"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnEUR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_row="0"
+            android:layout_columnWeight="1"
+            android:text="Euro"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnGBP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Libra Esterlina"/>
+
+        <Button
+            android:id="@+id/btnJPY"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="1"
+            android:layout_row="1"
+            android:layout_columnWeight="1"
+            android:text="Yen Japonés"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnCAD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Dólar Canadiense"/>
+
+        <Button
+            android:id="@+id/btnAUD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_columnSpan="1"
+            android:layout_columnWeight="1"
+            android:text="Dólar Australiano"/>
+    </GridLayout>
+
+    <!-- Botón para calcular la conversión -->
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- TextView para mostrar el resultado -->
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botón para volver a la actividad principal -->
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"/>
+</LinearLayout>
+
+
+
